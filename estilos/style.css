@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root/*Variaveis */ {
+    /*cores */
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover : #272727;
+    /*fonts */
+    --font-primaria: 'Krona One',sans-serif;
+    --font-secundaria : 'Monteserrat ', sans-serif ;
+}
+body{
+box-sizing: border-box; 
+background-color: var(--cor-primaria);
+color:var(--cor-secundaria);
+}
+.cabecalho{
+padding: 2% 0% 0% 15%;    
+}
+
+.cabecalho__menu{
+display: flex;
+gap: 80px;
+}
+.cabecalho__menu__link{
+color:var(--cor-terciaria);
+font-family:var(--font-secundaria) ;
+font-weight: 600;
+font-size: 1.5rem;
+text-decoration: none;
+}
+ 
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 82px;
+
+}
+.apresentacao__conteudo{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 40px;/*define os epaços */
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+strong{
+    color:var(--cor-terciaria);   
+   }
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family:var(--font-secundaria) ;
+}
+.apresentacao__links{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 32px;/*define os epaços */
+}
+
+.apresentação__links__subtitulo{
+    font-family:var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentação__links__link{
+display: flex;  
+justify-content: center;
+gap: 16px;/*define os epaços */
+border: 2px solid var(--cor-terciaria);
+width: 50% ;
+text-align: center;
+border-radius: 8px;
+font-size: 1.5rem;
+padding: 21.5px 0 ;
+text-decoration:none ;
+color:var(--cor-secundaria);
+font-family: var(--font-secundaria);
+font-weight: 600;
+}
+
+.apresentação__links__link:hover{
+background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem{
+ width: 50%;   
+}
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color:var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+     font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width : 1200px){
+.cabecalho{
+    padding: 10%;
+
+}
+.cabecalho__menu{
+    justify-content: center;
+}
+    .apresentacao{
+    flex-direction: column-reverse;
+        padding: 5%;
+}
+.apresentacao {
+    width: auto;
+     
+}
+}
+  
